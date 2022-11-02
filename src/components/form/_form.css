@@ -1,0 +1,30 @@
+.form-section {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.item1.item2 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.map-section {
+  width: 900px;
+  left: -122px;
+  bottom: 0;
+  position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  .form-section {
+    flex-direction: column-reverse;
+  }
+  .item1.item2 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .map-section {
+    width: 440px;
+  }
+}

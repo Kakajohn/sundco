@@ -1,9 +1,8 @@
-import React from 'react'
+import React from 'react';
+import Map from './Map';
 
 const Form = () => {
-  return (
-    <div>Form</div>
-  )
-}
+  return <Map />;
+};
 
-export default Form
+export default Form;
