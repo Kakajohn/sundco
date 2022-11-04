@@ -1,0 +1,23 @@
+footer {
+  font: normal normal 800 18px/22px Montserrat;
+  background: #000000;
+  color: white;
+  line-height: 30px;
+  padding: 0 10px;
+  margin: -5px 0 0 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.cookies {
+  text-align: center;
+  font-size: 12px;
+}
+
+.copyrights {
+  font-size: 12px;
+  font-weight: 100;
+  text-align: left;
+}

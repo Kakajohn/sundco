@@ -1,12 +1,15 @@
 .App {
   text-align: center;
+  font: normal normal 800 100px/122px Montserrat;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+body {
+  overflow-x: hidden;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -26,6 +29,10 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.fade-text {
+  color: #cfcfcf;
 }
 
 @keyframes App-logo-spin {
