@@ -18,7 +18,6 @@ const Layout = () => {
       <Slider />
       <Lady />
       <Pillow />
-      <Map />
       <Form />
       <Footer />
     </>

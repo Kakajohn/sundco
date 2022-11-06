@@ -1,8 +1,8 @@
 import React from 'react';
-import Map from './Map';
+import ContactUs from './ContactUs';
 
 const Form = () => {
-  return <Map />;
+  return <ContactUs />;
 };
 
 export default Form;

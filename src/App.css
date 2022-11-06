@@ -8,7 +8,7 @@
   pointer-events: none;
 }
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
