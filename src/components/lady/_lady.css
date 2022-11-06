@@ -62,7 +62,11 @@
   background-repeat: no-repeat;
   resize: horizontal;
 }
-
+@media (min-width:993px){
+  .lady-inside-text{
+    width: 60%;
+  }
+}
 .column {
   flex: 0 0 auto;
   width: 50%;

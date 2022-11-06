@@ -6,18 +6,18 @@ const Lady = () => {
     <>
       <div className='container'>
         <div className='lady'>
-          <div className='column'>
+          <div className='col-6'>
             <div className='your_frame'>
               <div className='lady-back'></div>
               {/* <img src={lad} className='container' alt='a pillow' /> */}
             </div>
           </div>
-          <div className='column'>
+          <div className='col-6'>
             <span className='fade-text'>Since the 1500s</span>
             <h3>
               <strong>The standard</strong>
             </h3>
-            <p>
+            <p className='lady-inside-text'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
               ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu

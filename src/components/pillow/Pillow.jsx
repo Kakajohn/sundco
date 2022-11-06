@@ -6,13 +6,14 @@ const Pillow = () => {
     <>
       <div className='container'>
         <div className='pillow'>
-          <div className='container'>
-            <div className='column'>
+          {/* <div className=''> */}
+          <div className='col-6'>
+            <div className='pillow-text'>
               <span className='fade-text'>Since the 1500s</span>
               <h3>
                 <strong>The standard</strong>
               </h3>
-              <p>
+              <p className='pil-text-inside'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
@@ -21,7 +22,8 @@ const Pillow = () => {
               </a>
             </div>
           </div>
-          <div className='column'>
+          {/* </div> */}
+          <div className='col-6'>
             <div className='your_frame'>
               <img src={pil} className='container' id='effe' alt='a pillow' />
             </div>
