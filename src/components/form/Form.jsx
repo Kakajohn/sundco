@@ -1,9 +1,8 @@
-import React from 'react'
+import React from 'react';
+import ContactUs from './ContactUs';
 
 const Form = () => {
-  return (
-    <div>Form</div>
-  )
-}
+  return <ContactUs />;
+};
 
-export default Form
+export default Form;

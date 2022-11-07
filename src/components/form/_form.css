@@ -1,0 +1,368 @@
+#form-map {
+  margin-left: -8em;
+  background-repeat: no-repeat;
+  resize: horizontal;
+  background-image: url('../../assets/desktop/desktop-map.png');
+}
+
+@media (max-width: 1000px) {
+  #form-map {
+    margin-top: 6rem;
+    margin-left: 0em;
+  }
+}
+
+/* #cont {
+  To show the boundaries of the element
+} */
+@media (max-width: 992px) {
+  .drop-fields {
+    min-width: 14em !important;
+  }
+}
+
+@media (min-width: 993px) {
+  .drop-fields {
+    min-width: 50% !important;
+  }
+}
+
+.info-text {
+  color: #cfcfcf;
+}
+
+.error-message {
+  text-align: right;
+  color: red;
+}
+
+.drop-down {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 992px) {
+  .drop-down {
+    flex-direction: column;
+  }
+}
+
+#cont:before {
+  position: absolute;
+  content: '';
+  background: var(--unnamed-color-b4ff00) 0% 0% no-repeat padding-box;
+  background: #b4ff00 0% 0% no-repeat padding-box;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  pointer-events: none;
+  left: 21rem;
+}
+
+@media (max-width: 600px) {
+  .cont::before {
+    transform: translate(-50%, 10px);
+  }
+  #form-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.border-fields {
+  border-radius: 18px !important;
+}
+
+.border-fields-error {
+  border-radius: 18px !important;
+  border: 1px solid red !important;
+}
+
+.text-black {
+  color: #000;
+}
+
+.content {
+  padding: 7rem 0;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.form-control {
+  border: 1px solid #4b00ff;
+  background-color: #4b00ff !important;
+  color: #fff !important;
+  border: none;
+  width: 14rem !important;
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 48px !important;
+  background: none;
+}
+
+/* .form-control:hover {
+  border: 1px solid #4b00ff;
+} */
+.fields:hover {
+  border: 1px solid #4b00ff;
+}
+
+.contact-description {
+  font: normal normal normal 14px/20px Montserrat;
+}
+
+.form-control:active,
+.form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #000;
+}
+
+.col-form-label {
+  color: #000;
+  font-size: 13px;
+}
+
+.btn,
+.form-control,
+.custom-select {
+  height: 45px;
+}
+
+.custom-select:active,
+.custom-select:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #000;
+}
+
+.btn {
+  border: none;
+  border-radius: 0;
+  font-size: 12px;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.btn.btn-primary {
+  background: #35477d;
+  color: #fff;
+  padding: 15px 20px;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.contact-wrap .col-form-label {
+  font-size: 14px;
+  color: #b3b3b3;
+  margin: 0 0 10px 0;
+  display: inline-block;
+  padding: 0;
+}
+
+.contact-wrap .form,
+.contact-wrap .contact-info {
+  padding: 40px;
+}
+
+.contact-wrap .contact-info {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-wrap .contact-info ul li {
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-wrap .contact-info ul li .wrap-icon {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.contact-wrap .form {
+  background: #fff;
+}
+
+.check-text {
+  font: normal normal normal 16px/16px Montserrat;
+}
+
+.contact-wrap .form h3 {
+  color: #35477d;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.contact-wrap .contact-info {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.contact-wrap .contact-info a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#form-map .cont::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media (max-width: 1199.98px) {
+  /* #form-map {
+    background-size: contain;
+  } */
+
+  .contact-wrap .contact-info {
+    height: 400px !important;
+  }
+}
+
+/* @media (min-width: 1001px) {
+  .contact-wrap .contact-info {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
+} */
+.contact-wrap .contact-info h3 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+label.error {
+  font-size: 12px;
+  color: red;
+}
+
+#form-message-warning,
+#form-message-success {
+  display: none;
+}
+
+#form-message-warning {
+  color: #b90b0b;
+}
+
+#form-message-success {
+  color: #55a44e;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.submitting {
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+  display: none;
+  font-weight: bold;
+  font-size: 12px;
+  color: #000;
+}
+
+#contact-us {
+  color: #000000;
+}
+
+#submit {
+  background-color: #4b00ff;
+  border-radius: 28px !important;
+}
+
+.box {
+  width: 8%;
+  height: 8%;
+  /* background-image: url(http://www.clker.com/cliparts/W/0/g/a/W/E/map-pin-red.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain; */
+  content: '';
+  background: var(--unnamed-color-b4ff00) 0% 0% no-repeat padding-box;
+  background: #b4ff00 0% 0% no-repeat padding-box;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+}
+.box:hover {
+  scale: 8;
+}
+@media (min-width: 1200px) {
+  #pin-1 {
+    top: 149em;
+    left: 18em;
+  }
+}
+@media (min-width: 998px) and (max-width: 1199px) {
+  #pin-1 {
+    top: 130em;
+    left: 19em;
+  }
+}
+@media (min-width: 602px) and (max-width: 997px) {
+  #pin-1 {
+    top: 120em;
+    left: 24em;
+  }
+}
+@media (min-width: 437px) and (max-width: 600px) {
+  #pin-1 {
+    top: 212em;
+    left: 20em;
+  }
+}
+
+@media (max-width: 436px) {
+  #pin-1 {
+    top: 239em;
+    left: 11em;
+  }
+}
+.box:hover > .pin-text {
+  display: block;
+}
+
+.pin-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 75%;
+  white-space: nowrap;
+  display: none;
+}
+
+.pin-text h3 {
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+}
