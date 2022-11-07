@@ -2,6 +2,9 @@ import React from 'react';
 import './_pillow.css';
 import pil from '../../assets/desktop/desktop-pillow.png';
 const Pillow = () => {
+  /**
+   * @returns the pillow section.
+   */
   return (
     <>
       <div className='container'>

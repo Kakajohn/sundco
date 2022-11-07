@@ -3,6 +3,9 @@ import './_footer.css';
 import { ReactComponent as Logo } from '../../assets/svg/logo.svg';
 
 const Footer = () => {
+  /**
+   * @returns the footer of the project.
+   */
   return (
     <footer className='footer'>
       <div className='row'>

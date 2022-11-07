@@ -4,6 +4,9 @@ import './slider.css';
 import dataSlider from './dataSlider';
 
 export default function Slider() {
+  /**
+   * returns the slider of the project.
+   */
   const [slideIndex, setSlideIndex] = useState(1);
 
   /**

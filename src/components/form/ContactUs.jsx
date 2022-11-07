@@ -5,6 +5,11 @@ import 'semantic-ui-css/semantic.min.css';
 import './_form.css';
 
 const ContactUs = () => {
+  /**
+   * @param = () => {} It uses the useForm hook of React and regex for the fields validation
+   * @returns the Map and Form sections.
+   * If the user doesn't type the perspective text (that we check with regex) the form will display a custom error message.
+   */
   const {
     register,
     handleSubmit,
@@ -28,10 +33,15 @@ const ContactUs = () => {
 
   return (
     <div className='container'>
-      <div className='row align-items-stretch no-gutters contact-wrap'>
+      <div className='row align-items-stretch no-gutters contact-wrap' id='form-mobile'>
         <div className='col-md-6'>
           <div className='contact-info h-100' id='form-map'>
             {/* <div id='cont'></div> */}
+            <div id='pin-1' class='box'>
+              <div class='pin-text'></div>
+              {/* <h3>S.und@themail.com</h3>
+              <span>+30 210 1234 567</span> */}
+            </div>
           </div>
         </div>
         <div className='col-md-6'>
@@ -66,7 +76,7 @@ const ContactUs = () => {
                 {...register('phone', {
                   required: true,
                   minLength: 10,
-                  maxLength: 12,
+                  maxLength: 10,
                   pattern: /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/
                 })}
               />
@@ -74,7 +84,7 @@ const ContactUs = () => {
             {errors.phone ? (
               <p className='text-end error-message '>Please check the Phone</p>
             ) : (
-              <p className='text-end info-text'>reqired field</p>
+              <p className='text-end info-text'>required field</p>
             )}
             <Form.Field>
               <label>Email</label>
@@ -92,7 +102,7 @@ const ContactUs = () => {
             {errors.email ? (
               <p className='text-end error-message '>Wrong email values</p>
             ) : (
-              <p className='text-end info-text'>reqired field</p>
+              <p className='text-end info-text'>required field</p>
             )}
             <div className='drop-down'>
               <Form.Field>

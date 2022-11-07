@@ -2,6 +2,9 @@ import React from 'react';
 import './_lady.css';
 import lad from '../../assets//desktop/desktop-lady.png';
 const Lady = () => {
+  /**
+   * @returns the lady section.
+   */
   return (
     <>
       <div className='container'>

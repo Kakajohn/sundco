@@ -10,6 +10,10 @@ import { ReactComponent as Browser } from '../../assets/svg/Path 4.svg';
 import './_navigationbar.css';
 
 const NavigationBar = () => {
+  /**
+   * @param = () => {} For the responsivness it uses a useState with default on false, when it reaches the breakpoint it becomes true and it displays a burger navigation.
+   * @returns the navigation bar
+   */
   const [showNavbar, setShowNavbar] = useState(false);
 
   const handleShowNavbar = () => {
