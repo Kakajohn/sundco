@@ -96,7 +96,12 @@
 /* .form-control:hover {
   border: 1px solid #4b00ff;
 } */
-
+.fields:hover {
+  border: 1px solid #4b00ff;
+}
+.contact-description {
+  font: normal normal normal 14px/20px Montserrat;
+}
 .form-control:active,
 .form-control:focus {
   outline: none;
@@ -180,7 +185,9 @@
 .contact-wrap .form {
   background: #fff;
 }
-
+.check-text {
+  font: normal normal normal 16px/16px Montserrat;
+}
 .contact-wrap .form h3 {
   color: #35477d;
   font-size: 20px;

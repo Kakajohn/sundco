@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
 import { Form, Button, TextArea, Dropdown, Checkbox } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
@@ -39,21 +39,21 @@ const ContactUs = () => {
             <h2>
               <strong>Contact us</strong>
             </h2>
-            <span className='my-4'>
+            <span className='my-4 contact-description'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.
             </span>
             <Form.Field>
-              <label>First Name</label>
+              <label>Name</label>
               <input
                 className={` ${errors.firstName ? 'border-fields-error' : 'border-fields'}`}
-                placeholder='First Name'
+                placeholder='Name*'
                 type='text'
-                {...register('firstName', { required: true, maxLength: 10, pattern: /^([ \u00c0-\u01ffa-zA-Z'\-])+$/ })}
+                {...register('firstName', { required: true, maxLength: 10, pattern: /^([ \u00c0-\u01ffa-zA-Z'])+$/ })}
               />
             </Form.Field>
             {errors.firstName ? (
-              <p className='text-end error-message '>Please check the First Name</p>
+              <p className='text-end error-message '>Please check the Name</p>
             ) : (
               <p className='text-end info-text'>required field</p>
             )}
@@ -61,7 +61,7 @@ const ContactUs = () => {
               <label>Phone</label>
               <input
                 className={` ${errors.phone ? 'border-fields-error' : 'border-fields'}`}
-                placeholder='Last Name'
+                placeholder='Phone*'
                 type='number'
                 {...register('phone', {
                   required: true,
@@ -80,7 +80,7 @@ const ContactUs = () => {
               <label>Email</label>
               <input
                 className={` ${errors.email ? 'border-fields-error' : 'border-fields'}`}
-                placeholder='Email'
+                placeholder='Email*'
                 type='email'
                 {...register('email', {
                   required: true,
@@ -133,7 +133,7 @@ const ContactUs = () => {
             <Form.Field>
               <label>Message</label>
               <TextArea
-                className={`${errors.message ? 'border-fields-error' : 'border-fields'}`}
+                className={`fields ${errors.message ? 'border-fields-error' : 'border-fields'}`}
                 placeholder='Message'
                 type='text'
                 {...register('message', { required: true, maxLength: 100 })}
@@ -142,10 +142,13 @@ const ContactUs = () => {
             {errors.message ? (
               <p className='text-end error-message '>Message cannot be empty</p>
             ) : (
-              <p className='text-end info-text'>required field</p>
+              <p className='text-end info-text'>500</p>
             )}
             <Form.Field>
               <div className='row'>
+                <span className='info-text text-start' id='check-text'>
+                  Please select at least one of the following:
+                </span>
                 <div className='col-12'>
                   <Checkbox className='mx-1' label='Option 1' />
                   <Checkbox className='mx-4' label='Option 2' />

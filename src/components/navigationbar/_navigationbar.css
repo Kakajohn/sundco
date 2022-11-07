@@ -7,24 +7,30 @@
   background-color: #fcfcfc;
 } */
 
-/* .container {
+.navigation {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 100%;
-} */
+}
 
 .navbar {
   height: 60px;
-  background-color: #fef7e5;
+  background-color: #000;
   position: relative;
 }
 
-/* .logo {
-} */
+.logo {
+  z-index: 1032;
+  top: 26px;
+  left: 54px;
+  width: 72px;
+  height: 72px;
+  position: absolute;
+}
 
 .menu-icon {
   display: none;
@@ -32,6 +38,58 @@
 
 /* .nav-elements {
 } */
+.lang {
+  text-decoration: unset;
+  color: #fff;
+}
+.search {
+  color: #fff;
+  right: 54px;
+  position: absolute;
+  top: 20px;
+  cursor: pointer;
+}
+.active-example {
+  color: #b4ff00 !important;
+}
+.active-underline {
+  border-bottom: 4px solid #b4ff00;
+}
+.locale {
+  cursor: pointer;
+  color: #fff;
+  right: 130px;
+  position: absolute;
+}
+
+.none {
+  display: none;
+}
+
+.inactive {
+  color: #858585;
+}
+#social {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+}
+
+.infos {
+  font-weight: 100;
+}
+.lang:hover {
+  color: #fff;
+}
+.navFooter {
+  top: 514px;
+  position: absolute;
+  left: 1px;
+  width: 100%;
+  height: 264px;
+  background: #4b00ff 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
 
 .nav-elements ul {
   display: flex;
@@ -46,7 +104,8 @@
 .nav-elements ul a {
   font-size: 16px;
   font-weight: 400;
-  color: #2f234f;
+  color: #fff;
+  /* font: normal normal 800 38px/68px Montserrat; */
   text-decoration: none;
 }
 
@@ -66,23 +125,44 @@
   background-color: #574c4c;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1090px) {
   .nav-elements ul li:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 12px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 992px) {
+  .mobile {
+    width: 40px;
+  }
+  .logo {
+    top: 0px;
+  }
+  .search {
+    right: 74px;
+  }
+  .locale {
+    display: none;
+  }
   .menu-icon {
     display: block;
+    position: absolute;
+    right: 20px;
+    top: 23px;
     cursor: pointer;
+  }
+
+  .nav-elements ul a {
+    color: #000;
+    font-weight: 900;
   }
 
   .nav-elements {
     position: absolute;
     right: 0;
     top: 60px;
-    background-color: #fef7e5;
+    background-color: #fff;
+    color: #000;
     width: 0px;
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;
@@ -90,7 +170,9 @@
   }
 
   .nav-elements.active {
-    width: 270px;
+    z-index: 1030;
+    width: 100%;
+    text-align: center;
   }
 
   .nav-elements ul {

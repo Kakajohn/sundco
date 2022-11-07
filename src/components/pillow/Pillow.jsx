@@ -10,14 +10,14 @@ const Pillow = () => {
           <div className='col-6'>
             <div className='pillow-text'>
               <span className='fade-text'>Since the 1500s</span>
-              <h3>
+              <h3 className='titles'>
                 <strong>The standard</strong>
               </h3>
               <p className='pil-text-inside'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
               </p>
-              <a className='btn' id='search' href=''>
+              <a className='btn' id='search' href='/'>
                 Search
               </a>
             </div>

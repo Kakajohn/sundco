@@ -36,10 +36,10 @@ export default function Slider() {
           <div key={obj.id} className='container'>
             <div className={slideIndex === index + 1 ? 'slide active-anim' : 'slide'}>
               <div className='col-6 text-white'>
-                <h1>
-                  S.und Co <span className='underline'></span>
+                <h1 className='title'>
+                  <span className='underline'> S.</span>und Co
                 </h1>
-                <p>
+                <p className='description'>
                   To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain
                   some advantage from it?
                 </p>

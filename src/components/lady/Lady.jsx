@@ -7,14 +7,13 @@ const Lady = () => {
       <div className='container'>
         <div className='lady'>
           <div className='col-6'>
-            <div className='your_frame'>
-              <div className='lady-back'></div>
-              {/* <img src={lad} className='container' alt='a pillow' /> */}
+            <div className='lady_frame'>
+              <img src={lad} className='container' id='' alt='a pillow' />
             </div>
           </div>
           <div className='col-6'>
             <span className='fade-text'>Since the 1500s</span>
-            <h3>
+            <h3 className='titles'>
               <strong>The standard</strong>
             </h3>
             <p className='lady-inside-text'>

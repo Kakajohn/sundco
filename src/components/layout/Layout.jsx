@@ -3,7 +3,6 @@ import Metatags from '../Metatags';
 import NavigationBar from '../navigationbar/NavigationBar';
 import Lady from '../lady/Lady';
 import Pillow from '../pillow/Pillow';
-import Map from '../map/Map';
 import Form from '../form/Form';
 import Footer from '../footer/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';

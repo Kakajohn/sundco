@@ -1,6 +1,7 @@
 import React from 'react';
 import './_footer.css';
-import logo from '../../assets/svg/logo.svg';
+import { ReactComponent as Logo } from '../../assets/svg/logo.svg';
+
 const Footer = () => {
   return (
     <footer className='footer'>
@@ -11,8 +12,8 @@ const Footer = () => {
         <div className='col-4'>
           <p className='cookies'>Cookies. | Privacy.</p>
         </div>
-        <div className='col-4'>
-          <p></p>
+        <div className='col-4' id='small-logo'>
+          <Logo className='logo-footer' />
         </div>
       </div>
     </footer>
